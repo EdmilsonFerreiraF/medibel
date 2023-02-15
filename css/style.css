@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600;700;900&display=swap");
+@font-face {
+  font-family: "Avenir";
+  src: url("./assets/Avenir.ttc") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Avenir";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  background-color: #C17E8F;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Avenir";
+  font-weight: 300;
+  padding: 0.5vh 1.5vw;
+  border-radius: 33px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  margin: 0vh 10% 0 10%;
+}
+main .main-text {
+  flex: 1;
+  align-items: center;
+}
+main .main-text h1 {
+  color: #4A3654;
+  font-size: 9rem;
+  font-weight: 900;
+  z-index: 2;
+  font-family: "Vollkorn";
+  line-height: 8rem;
+  margin-bottom: 5vh;
+}
+main .main-text p {
+  color: #4A3654;
+  font-size: 1.5rem;
+  padding: 0 10vw 0 0vw;
+  font-weight: 400;
+  font-family: "Avenir";
+}
+main .main-text button {
+  margin-top: 6vh;
+}
+main .main-image {
+  flex: 1;
+  z-index: -1;
+}
+main .main-image img {
+  width: 40vw;
+  height: auto;
+  margin-left: -8vw;
+}
+
+.abdominoplasty-cases {
+  display: flex;
+  align-items: center;
+  margin: 7vh 10% 0 10%;
+  flex-direction: column;
+}
+.abdominoplasty-cases h2 {
+  color: #433648;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+}
+.abdominoplasty-cases .card-grid {
+  display: flex;
+  flex-direction: row;
+}
+.abdominoplasty-cases .card-grid .card {
+  padding: 1rem 1rem;
+  text-align: center;
+}
+.abdominoplasty-cases .card-grid .card h3 {
+  color: #433648;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+.abdominoplasty-cases .card-grid .card p {
+  color: #504957;
+  font-size: 1.4rem;
+  text-align: left;
+}
+.abdominoplasty-cases button {
+  margin: 10vh 0vw;
+}
+
+.divider-image {
+  margin-bottom: -30rem;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.presentation .presentation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 5rem 8rem;
+  margin: 0rem 5rem;
+}
+.presentation .presentation-container h2 {
+  font-size: 4.5rem;
+  font-family: "Vollkorn";
+  color: #4A3654;
+  margin-bottom: 5vh;
+}
+.presentation .presentation-container p {
+  color: #6F5260;
+  font-size: 1.5rem;
+}
+.presentation .presentation-container button {
+  margin: 5vh 0 3vh 0;
+}
+
+.feedback {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0vh 0 10vh 0;
+}
+.feedback div {
+  padding: 3vh 15vw;
+}
+.feedback div h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  color: #433648;
+  margin-bottom: 3vh;
+}
+.feedback div p {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #504957;
+}
+
+.info {
+  margin: 9vh 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.85);
+}
+.info h2 {
+  color: #6F5260;
+  font-size: 5rem;
+  font-weight: 900;
+}
+.info .info-card .info-asset {
+  height: 5vh;
+  width: auto;
+}
+.info .info-card p {
+  color: #6F5260;
+  font-size: 1.4rem;
+}
+
+.slider {
+  margin: 4vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slider h2 {
+  color: #433648;
+  font-size: 5rem;
+  font-weight: 900;
+}
+.slider h3 {
+  color: #433648;
+}
+.slider .swiper {
+  width: 100%;
+  height: 466px;
+  margin: 100px 0;
+}
+.slider .swiper .slider-1 {
+  background-image: url("/assets/images/slider-1.png");
+  background-size: cover;
+  width: 366px;
+  height: 466px;
+}
+.slider .swiper .slider-2 {
+  background-image: url("/assets/images/slider-2.png");
+  background-size: cover;
+  width: 366px;
+  height: 466px;
+}
+.slider .swiper .swiper-button-lock {
+  display: flex;
+}
+.slider .swiper .swiper-button-prev, .slider .swiper .swiper-button-next {
+  width: 50px;
+}
+.slider .swiper .swiper-button-prev::after, .slider .swiper .swiper-button-next::after {
+  content: "";
+  width: 41px;
+  height: 60px;
+  background-size: contain;
+}
+.slider .swiper .swiper-button-prev::after {
+  background-image: url("/assets/images/left-arrow.svg");
+}
+.slider .swiper .swiper-button-next::after {
+  background-image: url("/assets/images/right-arrow.svg");
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  padding: 10rem;
+  background-image: url("../assets/images/contact-background.png");
+  background-size: cover;
+  background-position: center;
+}
+.contact .contact-info {
+  flex: 1;
+}
+.contact .contact-info h2 {
+  font-size: 8rem;
+  line-height: 7rem;
+  color: #FFFBFB;
+  font-family: "Vollkorn";
+  text-align: left;
+  padding: 0vh 0vw 10vh 0vw;
+}
+.contact .contact-info .contact-number p {
+  font-size: 1.7rem;
+  color: #FFFBFB;
+  font-family: "Vollkorn";
+}
+.contact .contact-info .contact-number .contact-social {
+  margin-top: 3vh;
+}
+.contact .contact-info .contact-number .contact-social .social {
+  display: flex;
+  flex-direction: row;
+  margin: 2vh 0;
+}
+.contact .contact-info .contact-number .contact-social .social .social-logo {
+  width: 2.5vw;
+  height: auto;
+  margin-right: 0.5vw;
+}
+.contact .contact-box {
+  flex: 1;
+  padding: 15vh 0vw 0vh 0vw;
+  margin-left: -10vw;
+}
+.contact .contact-box form {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-box label, .contact .contact-box input, .contact .contact-box textarea {
+  margin-bottom: 10px;
+}
+.contact .contact-box textarea {
+  height: 150px;
+  background: rgba(255, 255, 255, 0.69);
+  font-size: 1rem;
+  border: none;
+  resize: none;
+}
+.contact .contact-box input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.69);
+  font-size: 1rem;
+}
+.contact .contact-box button {
+  margin-top: 3vh;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+}
+footer p {
+  color: #504957;
+  font-size: 1.3rem;
+}
+
+/*# sourceMappingURL=style.css.map */
